@@ -17,16 +17,116 @@
     </head>
     <body>
         <div class="container">
-        <div id="settings" class="row">
-        <div class="col-md-12 col-xs-12" id="factions"></div>
-        <div class="col-md-12 col-xs-12" id="options">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" id="duplicate_faction">
-                    Allow duplicate factions?
-                </label>
+        <div id="settings">
+            <div class="row">
+            <div class="col-md-12 col-xs-12" id="factions"></div>
+            <div class="col-md-12 col-xs-12" id="options">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="duplicate_faction">
+                        Allow duplicate factions?
+                    </label>
+                </div>
+            </div>
+            </div>
+            <div id="settings-teams" class="row">
+                <div id="team-1" class="col-md-3 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="team-1-name" data-team="1" class="form-control input-lg team-name" placeholder="Team 1">
+                            <div class="input-group-addon"><button type="button" class="btn btn-default btn-sm clear-team" tabindex="-1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="team-2" class="col-md-3 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="team-2-name" data-team="2" class="form-control input-lg team-name" placeholder="Team 2">
+                            <div class="input-group-addon"><button type="button" class="btn btn-default btn-sm clear-team" tabindex="-1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="team-3" class="col-md-3 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="team-3-name" data-team="3" class="form-control input-lg team-name" placeholder="Team 3">
+                            <div class="input-group-addon"><button type="button" class="btn btn-default btn-sm clear-team" tabindex="-1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="team-4" class="col-md-3 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="team-4-name" data-team="4" class="form-control input-lg team-name" placeholder="Team 4">
+                            <div class="input-group-addon"><button type="button" class="btn btn-default btn-sm clear-team" tabindex="-1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-push-3 col-xs-12">
+                    <button type="button" id="randomize" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Randomize Factions</button>
+                </div>
+                <div class="col-md-3 col-md-pull-6 col-xs-12">
+                    <button type="button" id="update" class="btn btn-info btn-lg btn-block" disabled="disabled"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Update Players</button>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <button type="button" id="cancel" class="btn btn-default btn-lg btn-block" disabled="disabled"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Cancel</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div id="not-enough-factions" class="alert alert-danger" role="alert">
+                        <p>Not enough factions</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div id="not-enough-players" class="alert alert-danger" role="alert">
+                        <p>Not enough players</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="settings-toggle">
+            <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-xs-12">
+                <button type="button" id="display-settings" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-cog"></span> Settings</button>
+            </div>
+            </div>
+        </div>
+        <div id="scoring">
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Player 1</div>
+                    <div class="panel-body">Faction 1 / Faction 2</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Player 2</div>
+                    <div class="panel-body">Faction 3 / Faction 4</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">Player 3</div>
+                    <div class="panel-body">Faction 5 / Faction 6</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Player 4</div>
+                    <div class="panel-body">Faction 7 / Faction 8</div>
+                </div>
+            </div>
         </div>
         </div>
         <script src="js/jquery-1.11.3.min.js"></script>

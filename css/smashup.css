@@ -1,5 +1,9 @@
+.container {
+    background-color: #eee;
+}
+
 #settings {
-    background-color: #ee0;
+    background-color: #efefef;
 }
 
 .faction-list {
