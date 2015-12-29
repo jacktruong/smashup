@@ -13,7 +13,7 @@ $(document).ready(function() {
     factions.push({'name': 'Big Geeky Box', 'factions': ['The Geeks']});
     factions.push({'name': 'Monster Smash', 'factions': ['Vampires', 'Mad Scientists', 'Giant Ants', 'Werewolves']});
     factions.push({'name': 'Pretty Pretty Smash Up', 'factions': ['Fairies', 'Mythic Horses', 'Kitty Cats', 'Princesses']});
-    //factions.push({'name': 'Munchkin', 'factions': ['Warriors', 'Clerics', 'Mages', 'Rogues', 'Orcs', 'Dwarves', 'Elves', 'Halflings']});
+    factions.push({'name': 'Munchkin', 'factions': ['Warriors', 'Clerics', 'Mages', 'Rogues', 'Orcs', 'Dwarves', 'Elves', 'Halflings']});
 
     var make_id = function(string) {
         return string.toLowerCase().replace(/[^a-z]+/g, '_');
